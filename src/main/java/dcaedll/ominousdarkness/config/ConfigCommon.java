@@ -36,7 +36,7 @@ public class ConfigCommon
 		delay = builder
 				.comment("", "The time (in seconds) a player has to spend in the darkness before it starts accumulating",
 						"The timer gets reset once the player is in a lit enough area, and starts ticking again once in the darkness and the player's darkness level is at 0")
-				.defineInRange("delay", 4.0f, 0.0f, max);
+				.defineInRange("delay", 60.0f, 0.0f, max);
 		growth = builder
 				.comment("", "The time (in seconds) it takes for the darkness to fully consume a player",
 						"In this context, 0 would mean that the darkness should consume the player instantly, once in an unlit area")
